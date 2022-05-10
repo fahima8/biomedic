@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alsalha-biomedic</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+      
+    <marquee behavior="alternate"> <h1 style="color: brown;">Bienvenue chez Alsalha-biomedic
+    
+    </h1> 
+
+
+    </marquee>
+
+
+      
+       
+            <table>
+                <tr>
+                    <td>
+                        <form onsubmit="event.preventDefault(); onFormSubmit()">
+        
+                            <div>
+                                <label for="code">Code patient</label>
+                                <input type="text" name="code" id="code">
+                            </div>
+                            <div>
+                                <label for="nomComplet">nom complet* <label class="validation-error hide"  id="nomCompletValidationError" >ce champs est obligatoire</label> </label>
+                                <input type="text" name="nomComplet" id="nomComplet">
+                            </div>                  
+                            <div>
+                                <label for="genre">Genre</label>
+                                <input type="text" name="genre" id="genre">
+                            </div>
+                            <div>
+                                <label for="adresse">Adresse</label>
+                                <input type="text" name="adresse" id="adresse">
+                            </div>
+                            <div>
+                                <label for="contact">Contact</label>
+                                <input type="text" name="contact" id="contact">
+                            </div>
+                            <div>
+                                <label for="unite">Unite</label>
+                                <input type="text" name="unite" id="unite">
+                            </div>
+                            <div>
+                                <input class="form-action-buttons submit" type="submit" value="Enregistrer">
+                            </div>
+                            
+                        </form>
+                    </td>
+                    <td>
+                        <table class="list" id="emplist">
+                            <thead>
+                                <tr>
+                                    <td class="thead">code patient</td>
+                                    <td class="thead">Nom complet</td>
+                                    <td class="thead">Genre</td>
+                                    <td class="thead">Adresse</td>
+                                    <td class="thead">Contact</td>
+                                    <td class="thead">Unite</td>
+                                    <td class="thead">Action</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+        
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
