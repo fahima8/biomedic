@@ -1,82 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alsalha-biomedic</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-      
-    <marquee behavior="alternate"> <h1 style="color: brown;">Bienvenue chez Alsalha-biomedic
-    
-    </h1> 
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="assets/css/main.css">
+			<link rel="stylesheet" href="assets/css/button.css">
+			<link rel="stylesheet" href="assets/css/records.css">
+			<link rel="stylesheet" href="assets/css/model.css">
+			<script src="assets/js/main.js" defer></script>
+			<title>Alsalha-Biomedic</title>
+		</head>
+		<body>
+			<header>
+				<h1 class="header-title">Vous etes la bienvenue chez notre laboratoir Alsalha-Biomedic</h1>
+				
+			</header>
+			<main>
+			   <button class="button blue mobile"  id="idStudent">Nouveau Patient</button>
+			   <table id="tblStudent" class="records">
+				   <thead>
+					   <tr>
+						   <td>code patient</td>
+						   <td>Nom complet</td>
+						   <td>Genre</td>
+						   <td>Adresse</td>
+						   <td>Contact</td>
+						   <td>Unité souhaité</td>
+						   <td>Actions</td>
+					   </tr>
+				   </thead>
+				   <tbody>
 
-
-    </marquee>
-
-
-      
-       
-            <table>
-                <tr>
-                    <td>
-                        <form onsubmit="event.preventDefault(); onFormSubmit()">
-        
-                            <div>
-                                <label for="code">Code patient</label>
-                                <input type="text" name="code" id="code">
-                            </div>
-                            <div>
-                                <label for="nomComplet">nom complet* <label class="validation-error hide"  id="nomCompletValidationError" >ce champs est obligatoire</label> </label>
-                                <input type="text" name="nomComplet" id="nomComplet">
-                            </div>                  
-                            <div>
-                                <label for="genre">Genre</label>
-                                <input type="text" name="genre" id="genre">
-                            </div>
-                            <div>
-                                <label for="adresse">Adresse</label>
-                                <input type="text" name="adresse" id="adresse">
-                            </div>
-                            <div>
-                                <label for="contact">Contact</label>
-                                <input type="text" name="contact" id="contact">
-                            </div>
-                            <div>
-                                <label for="unite">Unite</label>
-                                <input type="text" name="unite" id="unite">
-                            </div>
-                            <div>
-                                <input class="form-action-buttons submit" type="submit" value="Enregistrer">
-                            </div>
-                            
-                        </form>
-                    </td>
-                    <td>
-                        <table class="list" id="emplist">
-                            <thead>
-                                <tr>
-                                    <td class="thead">code patient</td>
-                                    <td class="thead">Nom complet</td>
-                                    <td class="thead">Genre</td>
-                                    <td class="thead">Adresse</td>
-                                    <td class="thead">Contact</td>
-                                    <td class="thead">Unite</td>
-                                    <td class="thead">Action</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-        
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </div>
-
-    
-    <script src="js/script.js"></script>
-</body>
-</html>
+				   </tbody>
+			   </table>
+			   <!-- <div class="model active" id="model"> -->
+				<div class="model" id="model">
+				<div class="model-content">
+					<header class="model-header">
+						<h2>Créer Nouveau Patient</h2>
+						<span class="model-close" id="modelClose">&#10006;</span>
+					</header>
+					<form id="form" class="model-form">
+						<input type="text" class="model-field" id="code" data-index="new" placeholder="Code patient" required>
+						<input type="text" class="model-field" id="nom" placeholder="Nom complet" required>
+						<input type="text" class="model-field" id="genre" placeholder="Genre" required>
+						<input type="text" class="model-field" id="adresse" placeholder="Adresse" required>
+						<input type="text" class="model-field" id="contact" placeholder="Contact" required>
+						<input type="text" class="model-field" id="unite" placeholder="Unité souhaité" required>
+					</form>
+					<footer class="model-footer">
+						<button class="button green" id="save">Enregistrer</button>
+						<button class="button blue" id="cancel">Annuler</button>
+					</footer>
+				</div>
+			   </div>
+			</main>
+			<footer>
+			   Copyright &copy; Hltic Corp 2022 <br>
+			   Fahima Mahamat Ismael<br>
+			   Full Stack Junior Developer<br>
+			   Phone: +23566200135<br>
+			   hamdane.khalil.hisseine@gmail.com<br>
+			</footer>
+		</body>
+		</html>
